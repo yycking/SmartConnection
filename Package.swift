@@ -13,6 +13,6 @@ let package = Package(
         ),
     ],
     targets: [
-        .binaryTarget(name: "SmartConnection", url: "https://github.com/yycking/SmartConnection/releases/download/release/SmartConnection.xcframework.zip", checksum: "sha256:f1a7ee4c09a343fb04205d4b106ff7797fe5dbe0d1be437af945407db38a4d65"),
+        .binaryTarget(name: "SmartConnection", url: "https://github.com/yycking/SmartConnection/releases/download/release/SmartConnection.xcframework.zip", checksum: "f1a7ee4c09a343fb04205d4b106ff7797fe5dbe0d1be437af945407db38a4d65"),
     ]
 )
