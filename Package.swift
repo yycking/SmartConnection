@@ -11,13 +11,13 @@ let package = Package(
             name: "SmartConnection",
             targets: [
                 "SmartConnection",
-                "Link",
+                "SmartConnectionLink",
             ]
         ),
     ],
     targets: [
         .binaryTarget(name: "SmartConnection", url: "https://github.com/yycking/SmartConnection/releases/download/release/SmartConnection.xcframework.zip", checksum: "f1a7ee4c09a343fb04205d4b106ff7797fe5dbe0d1be437af945407db38a4d65"),
-        .target(name: "Link",
+        .target(name: "SmartConnectionLink",
                 linkerSettings: [.linkedLibrary("c++")]),
     ]
 )
