@@ -1,7 +1,7 @@
 import ElianSmartConnection
 import OSLog
 
-class SmartConnect {
+public class SmartConnection {
     private let context: UnsafeMutableRawPointer
     public private(set) var isBroadcasting = false
     
