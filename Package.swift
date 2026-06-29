@@ -16,7 +16,15 @@ let package = Package(
         ),
     ],
     targets: [
-        .binaryTarget(name: "Elian", url: "https://github.com/yycking/SmartConnection/releases/download/v1/SmartConnection.xcframework.zip", checksum: "f9f8fc72abcf3f8603b4baa884dcebeaa55aa8ec6245ffc8e81ef6311b0edcd6"),
+        .target(
+            name: "Elian",
+            path: "Sources/Elian",
+            publicHeadersPath: "include",
+            linkerSettings: [
+                .unsafeFlags(["-LSources/Elian/lib"]),
+                .linkedLibrary("Elian") // 會去找 libElian.a
+            ]
+        ),
         .target(name: "SmartConnection",
                 dependencies: ["Elian"],
                 linkerSettings: [.linkedLibrary("c++")]),
