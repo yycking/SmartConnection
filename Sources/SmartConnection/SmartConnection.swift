@@ -1,4 +1,4 @@
-import Elian
+import ElianSmartConnection
 import OSLog
 
 public class SmartConnection {
