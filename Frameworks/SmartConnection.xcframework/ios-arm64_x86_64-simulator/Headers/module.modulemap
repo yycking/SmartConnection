@@ -1,0 +1,4 @@
+module ElianSmartConnection /*[system][extern_c]*/ {
+    header "./elian.h"
+//    export *
+}
